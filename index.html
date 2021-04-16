@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- UIkit CSS -->
+ <title>Library of America</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/
+libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+<!-- jQuery is required -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/
+jquery/3.2.1/jquery.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/
+uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/
+uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="css/uikit-rtl.min.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+</head>
+
+<body > 
+   <header style="background-color: black;" uk-sticky id="header">
+        <div class="uk-grid" style="padding-left: 45%;padding-top: 15px;">
+            <a href="/" title="Home">
+                <span class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="53" viewBox="0 0 150 53">
+                        <g fill="#FFF">
+                            <path
+                                d="M81.167 11.151l1.293 2.909.645-3.07 3.071-.323-2.747-1.616.647-2.908-2.264 1.939-2.584-1.455 1.131 2.747-2.262 2.101zM98.456 28.117l2.101-2.424 2.747 1.293-1.455-2.585 1.939-2.424-2.908.647-1.616-2.586-.324 3.07-3.069.646 2.908 1.293zM57.738 7.597l2.585-1.939 2.424 1.939-.97-3.07 2.585-1.777h-3.069l-.97-2.909-.969 2.909h-3.07l2.424 1.777zM37.379 10.99l.646 3.07 1.293-2.909 3.07.324-2.424-2.101 1.293-2.747-2.586 1.455-2.423-1.939.646 2.908-2.585 1.616zM17.182 26.986l2.746-1.293 2.101 2.424-.323-3.07 2.747-1.293-2.909-.646-.323-3.07-1.616 2.586-3.07-.647 2.101 2.424zM119.784 49.931l-1.454-2.424H62.585c0-1.939 2.101-1.939 3.232-1.939h51.543l-1.454-2.424H67.109c-1.292 0-3.555.162-4.201.323.646-2.262 4.362-2.424 9.533-2.424h42.173l-1.455-2.423H73.411c-4.04 0-8.079.161-10.18 1.615 1.938-2.746 5.333-3.555 13.572-3.555h35.225l-1.454-2.424H76.966C64.848 34.257 60 37.328 60 47.022c0-9.694-4.847-12.766-16.966-12.766H9.426L7.972 36.68h35.062c8.24 0 11.634.809 13.573 3.555-2.101-1.454-5.979-1.615-10.18-1.615H6.841l-1.454 2.423h42.171c5.333 0 8.887.162 9.533 2.424-.646-.161-2.908-.323-4.201-.323H4.094L2.64 45.567h51.543c1.131 0 3.232 0 3.232 1.939H1.67L.216 49.93h57.36v1.454h5.009V49.93h57.199z">
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+            </a>
+            <a href="/" id="texto" title="Home" class=""
+                style="opacity: 1;display: block;margin-top: 48px;padding-bottom: 0px;font-size: 20pt;color: white;font-weight: 500;margin-left: -221px;text-decoration: none;">Library
+                of America</a>
+        </div>
+        <div class=""></div>
+        <section class="uk-child-width-expand@s uk-grid" style="padding-bottom: 25px;margin-top: -35px;">
+            <nav class="">
+                <ul class="uk-flex uk-flex-between"
+                    style="margin-right: 75px;font-size: 15pt;padding-right: 48px;list-style: none;">
+                    <li>
+                        <a class="" href="/books" style="color: white;">Books</a>
+                    </li>
+                    <li class="">
+                        <a class="link--white" href="/writers" style="color: white;">Writers</a>
+                    </li>
+                    <li>
+                        <a class="link--white" href="/news-and-views" style="color: white;">News &amp; Views</a>
+                    </li>
+                    <li>
+                        <a class="link--white" href="/subscribe" style="color: white;">Subscribe</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="uk-float-right">
+                <ul class="uk-flex uk-flex-between"
+                    style="margin-left: 115px;font-size: 15pt;padding-left: 48px;list-style: none;padding-right: 0px;">
+                    <li>
+                        <a class="" href="/memberships" style="color: white;">Join</a>
+                    </li>
+                    <li>
+                        <a class="" href="/support" style="color: white;">Support</a>
+                    </li>
+                    <li>
+                        <a class="" href="/about" style="color: white;">About</a>
+                    </li>
+                    <li><a href="https://loa.cloud.buysub.com/" class="" style="color: white;">Sign In</a></li>
+                    <li><span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+                                <g stroke="#FFF" stroke-miterlimit="10">
+                                    <circle fill="none" stroke-width="1.5" cx="9.417" cy="17.02" r="1"></circle>
+                                    <circle fill="none" stroke-width="1.5" cx="15.417" cy="17.02" r="1"></circle>
+                                    <path fill="#FFF"
+                                        d="M19.917 4.5H5.955l-1.038-1H1.5v1H4l1.169 1 1.748 8h11.125l1.875-9zm-2.944 8H8l-1.801-7h12.434l-1.66 7z">
+                                    </path>
+                                </g>
+                                <path fill="#F42535"
+                                    d="M59.768 9.316v3.368s3.267-.004 4.596-.004c-.721 2.182-1.84 3.37-4.596 3.37-2.789 0-4.967-2.262-4.967-5.051 0-2.788 2.178-5.049 4.967-5.049 1.475 0 2.426.518 3.301 1.24.697-.7.64-.799 2.418-2.479A8.472 8.472 0 0 0 59.768 2.5a8.5 8.5 0 0 0-8.5 8.5 8.5 8.5 0 0 0 8.5 8.5c7.017 0 8.731-6.109 8.162-10.184h-8.162zm15.365.17V6.54h-2.104v2.946H70v2.104h3.029v3.029h2.104V11.59h2.946V9.486h-2.946zM131.688 2.043a8.025 8.025 0 0 1-2.318.636 4.046 4.046 0 0 0 1.775-2.234 8.123 8.123 0 0 1-2.564.98 4.041 4.041 0 0 0-6.883 3.684 11.469 11.469 0 0 1-8.325-4.22 4.01 4.01 0 0 0-.547 2.031c0 1.401.713 2.637 1.797 3.361a4.025 4.025 0 0 1-1.829-.504l-.001.051a4.043 4.043 0 0 0 3.24 3.96 4.057 4.057 0 0 1-1.824.07 4.046 4.046 0 0 0 3.774 2.806 8.106 8.106 0 0 1-5.982 1.672 11.428 11.428 0 0 0 6.19 1.814c7.431 0 11.492-6.155 11.492-11.494 0-.174-.004-.349-.012-.522a8.168 8.168 0 0 0 2.017-2.091zM196.018 1.474c0 .503-.018 2.709-.018 2.709h-2v3.411h2.018L196 17.6h4V7.594h3V4.141h-3V1.599c0-.345.629-.494 1.076-.494H203v-3.506h-2.736c-4.349.001-4.246 3.372-4.246 3.875zM-7-64.25h240v50H-7z">
+                                </path>
+                            </svg>
+                        </span></li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18.99" viewBox="0 0 23 18.99">
+                                <defs>
+                                    <filter id="a" filterUnits="userSpaceOnUse" x="-33.467" y="0" width="23.887"
+                                        height="23.888">
+                                        <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix>
+                                    </filter>
+                                </defs>
+                                <mask maskUnits="userSpaceOnUse" x="-33.467" y="0" width="23.887" height="23.888"
+                                    id="b">
+                                    <g filter="url(#a)">
+                                        <path fill="#FFF"
+                                            d="M-16.627 20.304h3.225c0-2.27-.478-4.419-1.313-6.449a16.329 16.329 0 0 0-3.583-5.375c-1.433-1.433-3.225-2.627-5.375-3.583-2.03-.836-4.18-1.314-6.449-1.314v3.225c2.389 0 4.658.597 6.808 1.792a13.741 13.741 0 0 1 4.897 4.896c1.193 2.15 1.79 4.419 1.79 6.808zm-5.733 0h3.225c0-2.03-.478-3.822-1.433-5.494s-2.389-2.985-4.061-4.061c-1.672-1.075-3.583-1.433-5.494-1.433v3.224c2.149 0 3.941.717 5.494 2.27 1.552 1.433 2.269 3.344 2.269 5.494zm-3.583-2.031c0-.597-.239-1.075-.597-1.433a2.202 2.202 0 0 0-1.434-.598c-.597 0-1.075.238-1.433.598a2.201 2.201 0 0 0-.597 1.433c0 .597.239 1.075.597 1.434s.956.597 1.433.597c.598 0 1.075-.238 1.434-.597s.597-.956.597-1.434z">
+                                        </path>
+                                    </g>
+                                </mask>
+                                <path mask="url(#b)" fill="#010101"
+                                    d="M-10.178 23.888H-32.87c-.358 0-.597-.239-.597-.598V.597c0-.358.238-.597.597-.597h22.692c.358 0 .597.239.597.597V23.29c-.119.358-.357.598-.597.598z">
+                                </path>
+                                <defs>
+                                    <filter id="c" filterUnits="userSpaceOnUse" x="2.005" y="0" width="19.11"
+                                        height="19.11">
+                                        <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"></feColorMatrix>
+                                    </filter>
+                                </defs>
+                                <mask maskUnits="userSpaceOnUse" x="2.005" y="0" width="19.11" height="19.11" id="d">
+                                    <g filter="url(#c)">
+                                        <path fill="#FFF"
+                                            d="M10.365 3.583a4.79 4.79 0 0 1 4.777 4.777 4.79 4.79 0 0 1-4.777 4.777A4.79 4.79 0 0 1 5.588 8.36a4.791 4.791 0 0 1 4.777-4.777m0-2.15A6.932 6.932 0 0 0 3.438 8.36a6.933 6.933 0 0 0 6.927 6.928 6.933 6.933 0 0 0 6.928-6.928 6.933 6.933 0 0 0-6.928-6.927z">
+                                        </path>
+                                        <path fill="none" stroke="#FFF" stroke-width="2.2"
+                                            d="M13.948 11.943l5.017 5.017"></path>
+                                    </g>
+                                </mask>
+                                <path mask="url(#d)" fill="#FFF" d="M2.005 0h19.11v19.11H2.005z"></path>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+	
+	
+	
+	
+	
+
+ <section class="uk-child-width-expand@s uk-grid uk-grid-collapse">
+                <div>
+                    <div class="uk-card uk-card-body uk-text-center">
+                        <div class="uk-padding" style="padding-top: 0px;">
+                            <a
+                                href="/news-and-views/1827-loa-to-publish-a-never-before-seen-novel-by-the-legendary-author-of-_native-son_">
+                                <img src="images/rich.jpg" width="1880" height="1880" alt="" style="border-top: 10px solid black;padding-top: 40px;">
+                                <div class="uk-text-left">
+                                    <i class="uk-text-uppercase"
+                                        style="font-style: normal;color: red;font-weight: 500;">News</i>
+                                    <b class="" style="font-size: 15pt;color: black;font-weight: 400;">
+                                        <p>LOA to publish a never-before-seen novel by the legendary author of
+                                            <em style="color: black;font-style: italic;" class="">Native Son</em>
+                                        </p>
+                                    </b>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="uk-padding" style="padding-top: 0px;">
+                            <a href="/news-and-views/1829-adopt-this-book-_gertrude-stein-writings-1932-1946_">
+                               <img src="images/gertude.jpg" width="1880" height="1880" alt="" style="border-top: 10px solid black;padding-top: 40px;">
+                                    
+                                <div class="uk-text-left">
+                                    <i class="uk-text-uppercase"
+                                        style="font-style: normal;color: red;font-weight: 500;">News</i>
+                                    <b style="font-size: 15pt;color: black;font-weight: 400;">
+                                        <p>Adopt this book: <em style="color: black;font-style: italic;">Gertrude Stein:
+                                                Writings 1932–1946</em></p>
+                                    </b>
+                                    <div class="content-listing__description"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <div>
+                              <img src="images/octavia.jpg" width="1880" height="1880" alt="" style="border-top: 10px solid black;padding-top: 40px;">
+                                <div class="" style="margin-left: -70px;margin-top: 15px;margin-right: -59px;">
+                                    <i class="uk-text-uppercase"
+                                        style="color: red;font-style: normal;font-weight: 500;">Video</i>
+                                    <b class=""
+                                        style="color: black;font-size: 29pt;font-weight: 500;word-spacing: 10px;line-height: 40px;">
+                                        <p>Octavia E. Butler: “I could become a writer, or I could die really young”</p>
+                                    </b>
+                                    <div class="" style="color: black;padding-bottom: 3rem;">A TV talk show segment from
+                                        2000 is an
+                                        engaging way to learn more about the fiction writer who most recently joined the
+                                        Library of America series.</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            style="border-top: 8px solid red;padding-top: 31px;color: red;margin-left: -70px;margin-right: -55px;">
+                            <a href="https://twitter.com/LibraryAmerica" target="_blank" class=""
+                                style="float: right;background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2220%22%20viewBox%3D%220%200%2022%2020%22%3E%3Cg%20stroke%3D%22%23FFF%22%20stroke-miterlimit%3D%2210%22%3E%3Ccircle%20fill%3D%22none%22%20stroke-width%3D%221.5%22%20cx%3D%22-101.583%22%20cy%3D%2218.769%22%20r%3D%221%22%2F%3E%3Ccircle%20fill%3D%22none%22%20stroke-width%3D%221.5%22%20cx%3D%22-95.583%22%20cy%3D%2218.769%22%20r%3D%221%22%2F%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M-91.083%206.25h-13.962l-1.038-1h-3.417v1h2.5l1.169%201%201.748%208h11.125l1.875-9zm-2.945%208H-103l-1.801-7h12.434l-1.661%207z%22%2F%3E%3C%2Fg%3E%3Cpath%20fill%3D%22%23F42535%22%20d%3D%22M-51.233%2011.066v3.367s3.267-.004%204.596-.004c-.72%202.182-1.84%203.371-4.596%203.371-2.789%200-4.966-2.262-4.966-5.051%200-2.788%202.177-5.049%204.966-5.049%201.475%200%202.427.518%203.301%201.24.698-.7.64-.799%202.419-2.479a8.467%208.467%200%200%200-5.72-2.213%208.5%208.5%200%200%200-8.5%208.5%208.5%208.5%200%200%200%208.5%208.5c7.017%200%208.732-6.109%208.163-10.184-1.661.002-8.163.002-8.163.002zm15.366.17V8.29h-2.104v2.946H-41v2.104h3.03v3.029h2.104V13.34h2.946v-2.104h-2.947zM20.688%203.793a8.032%208.032%200%200%201-2.319.636%204.046%204.046%200%200%200%201.775-2.234%208.105%208.105%200%200%201-2.564.98%204.04%204.04%200%200%200-6.884%203.684%2011.469%2011.469%200%200%201-8.326-4.22%204.02%204.02%200%200%200-.547%202.031c0%201.401.713%202.637%201.797%203.361a4%204%200%200%201-1.829-.504l-.001.051a4.042%204.042%200%200%200%203.24%203.96%204.057%204.057%200%200%201-1.824.07%204.045%204.045%200%200%200%203.774%202.806%208.105%208.105%200%200%201-5.981%201.672A11.435%2011.435%200%200%200%207.191%2017.9c7.43%200%2011.492-6.155%2011.492-11.494%200-.174-.004-.349-.012-.522a8.168%208.168%200%200%200%202.017-2.091zM85.018%203.224c0%20.503-.018%202.709-.018%202.709h-2v3.411h2.018L85%2019.35h4V9.344h3V5.891h-3V3.349c0-.345.629-.494%201.076-.494H92V-.651h-2.736c-4.349.001-4.246%203.372-4.246%203.875zM-118-62.5h240v50h-240z%22%2F%3E%3C%2Fsvg%3E);background-repeat: no-repeat;width: 22px;height: 20px;"></a>
+                            <a href="https://lithub.com/on-the-accidental-career-of-e-o-wilson/" target="_blank">
+                                <p class=""
+                                    style="color: red;margin-bottom: 0px;text-decoration: none;padding-right: 6rem;font-size: 11pt;">
+                                    “I am blind in one
+                                    eye and cannot hear
+                                    high-frequency sounds; therefore I am an entomologist.”
+                                    David Quammen, editor of the new LOA edition of E. O. Wilson's works, summarizes the
+                                    fascinating career of the famous naturalist.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body uk-text-center">
+                        <div class="uk-padding" style="padding-top: 0px;padding-bottom: 10px;">
+                            <a
+                                href="/news-and-views/1676-loa-live-online-programs-inspired-by-library-of-america-publications">
+                                
+                                   <img src="images/animal.jpg" width="280" height="380" alt="" style="border-top: 10px solid black;padding-top: 40px;">
+								
+								
+								<div class="uk-text-left">
+                                    <i class="uk-text-uppercase"
+                                        style="font-style: normal;color: red;font-weight: 500;">Video</i>
+                                    <b class="" style="color: black;font-size: 18pt;font-weight: 400;">
+                                        <p>LOA LIVE: Online programs inspired by Library of America publications</p>
+                                    </b>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="uk-padding" style="padding-top: 0px;">
+                            <a href="/news-and-views/1836-joan-didion-la-noir">
+                                 <img src="images/henry.jpg" width="280" height="380" alt="" style="border-top: 10px solid black;padding-top: 40px;">
+                                <div class="uk-text-left" style="padding-top: 10px;">
+                                    <i class="uk-text-uppercase"
+                                        style="color: red;font-style: normal;font-weight: 500;">Story of the Week</i>
+                                    <b class="uk-h3" style="font-weight: 500;">
+                                        <p>Henry James, “The Real Thing”</p>
+                                    </b>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			
+			<div class="uk-card uk-card-body uk-margin-top" style="padding-bottom: 0px;">
+                        <h5 class="uk-padding"
+                            style="border-top: 10px solid black;margin-left: 40px;margin-right: 40px;">
+                        </h5>
+                    </div>
+
+<div class="uk-flex uk-flex-column  uk-text-center ukwidth-1-3 " >
+ <div class="uk-card uk-card-body "><h5><strong>NEW &amp; NOTEWORTHY</strong></h5></div>
+
+</div>
+
+<div class="uk-child-width-expand uk-background-default uk-grid-small uk-text-center uk-grid">
+
+ <div >
+ <div class="uk-card  uk-background-default  ukcard-body">
+
+ 
+<img src="images/Book1.jpg" width="180" height="180" alt="" uk-img>
+ <div  class="uk-text-center@s uk-text-normal">
+                John Updike: Novels 
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+                1978-1984 
+            </div>
+ 
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+ <div>
+ <div class="uk-card  uk-background-default  ukcard-body">
+ <img src="images/Book2.jpg" width="180" height="120" alt="" uk-img>
+ 
+ <div  class="uk-text-center@s uk-text-normal">
+                Richard Wright: The
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+                Man Who Lived 
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+                Underground
+            </div>
+
+ 
+ </div>
+ </div>
+ 
+ 
+ <div>
+ <div class="uk-card  uk-background-default  ukcard-body">
+ <img src="images/Book3.jpg" width="180" height="180" alt="" uk-img>
+ 
+  <div  class="uk-text-center@s uk-text-normal">
+                Edward O. Wilson:
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+               Biophilia, The Diversity 
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+                of Life, Naturalist
+            </div>
+
+ </div>
+ </div>
+ 
+<div>
+ <div class="uk-card  uk-background-default  ukcard-body">
+ <img src="images/Book4.jpg" width="180" height="180" alt="" uk-img>
+ <div  class="uk-text-center@s uk-text-normal">
+                 Women’s Liberation! 
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+               Feminist Writings that
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+                Inspired a Revolution &
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+               Still Can
+            </div>
+ 
+ 
+ </div>
+ </div>
+ 
+ 
+ 
+ <div>
+ <div class="uk-card  uk-background-default  ukcard-body">
+  <img src="images/Book5.jpg" width="180" height="180"alt="" uk-img>
+ <div  class="uk-text-center@s uk-text-normal">
+                 Octavia E. Butler: 
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+               indred, Fledgling,
+            </div>
+			<div  class="uk-text-center@s uk-text-normal">
+                Collected Stories
+            </div>
+			
+ 
+ </div>
+ </div>
+
+
+
+ </div>
+ 
+ 
+<div class="uk-card uk-card-body uk-margin-top" style="padding-bottom: 0px;">
+                        <h5 class="uk-padding"
+                            style="border-top: 7px solid black;margin-left: 40px;margin-right: 40px;">
+                        </h5>
+                    </div>
+
+<div class="uk-card  uk-background-default uk-text-center uk-card-body uk-flex-last@m uk-flex-first@l "><h5><strong>FEATURED WRITERS</strong></h5></div>
+
+
+<div class="uk-text-center" uk-grid>
+<div class="uk-width-1-4">
+<div class="uk-card  uk-card-small ukcard-
+hover uk-card-body">
+<img src="images/Book6.jpg" width="280" height="480" alt="" uk-img>
+<div  class=" uk-text-left">
+                Joan Didion
+            </div>		
+		<div  class="uk-text-left uk-text-danger">
+               Learn more
+            </div>
+</div>
+<div class="uk-card  uk-card-small ukcard-
+hover uk-card-body">
+<img src="images/Book8.jpg" width="280" height="480" alt="" uk-img>
+		<div  class=" uk-text-left">
+                Ursula K. Le Guin
+            </div>		
+		<div  class="uk-text-left uk-text-danger">
+               Learn more
+            </div>
+</div>
+</div>
+<div class="uk-width-1-4">
+<div class="uk-card  uk-card-small ukcard-
+hover uk-card-body">
+<img src="images/Book7.jpg" width="280" height="480" alt="" uk-img>
+		<div  class=" uk-text-left">
+                John Updike
+            </div>		
+		<div  class="uk-text-left uk-text-danger">
+               Learn more
+            </div>
+</div>
+
+<div class="uk-card  uk-card-small  uk-card-body">
+
+
+<img src="images/Book9.jpg" width="280" height="480" alt="" uk-img>
+		<div  class=" uk-text-left">
+                Frederick Douglass
+            </div>		
+		<div  class="uk-text-left uk-text-danger">
+               Learn more
+            </div>
+</div>
+</div>
+
+
+<div class="uk-width-1-2">
+<div class="uk-card  uk- card- body">
+<img class="uk-align-left uk-margin-remove-adjacent" src="images/book10.jpg" width="225" height="150" alt="Example image">
+    <h5 class="uk-text-danger uk-text-left">WRITER OF THE WEEK</h5>
+	<h5 style="font-size:30pt; color:black;" class="uk-text-left">Theodore Roosevelt</h5>
+	<h6 class="uk-text-danger uk-text-left">Learn more</h6>
+ 
+
+
+</div>
+</div>
+
+</div>
+
+<section class="uk-padding uk-text-center">
+                <h2 class="uk-text-uppercase"
+                    style="font-size: 13pt;letter-spacing: 2px;font-weight: 500;border-top: 5px solid black;padding-top: 20px;color: black;margin: 0px 40px;">
+                    Featured Topics</h2>
+                <div class=""
+                    style="font-size: 20pt;margin: 40px 40px;padding-bottom: 60px;border-bottom: 5px solid black;">
+                    <a href="/topics/35-books-for-young-readers" class=""
+                        style="color: black;padding-left: 20px;border-left: 1px solid black;padding-right: 20px;">
+                        Books for Young Readers
+                    </a>
+                    <a href="/topics/1-the-founders" class=""
+                        style="color: black;padding-left: 20px;padding-right: 20px;border-left: 1px solid black;">
+                        The Founders
+                    </a>
+                    <a href="/topics/15-hollywood" class=""
+                        style="color: black;padding-left: 20px;border-left: 1px solid black;border-right: 1px solid black;padding-right: 20px;">
+                        Hollywood
+                    </a>
+                </div>
+            </section>
+			<div class="uk-text-center" style="padding-bottom: 2rem;">
+            <div class="uk-grid uk-width-1-4@s">
+                <a href="/" title="Home" class=""
+                    style="background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22120%22%20height%3D%2253%22%20viewBox%3D%220%200%20120%2053%22%3E%3Cg%20fill%3D%22%23F42535%22%3E%3Cpath%20d%3D%22M81.167%2011.151l1.293%202.909.645-3.07%203.071-.323-2.746-1.616.646-2.908-2.264%201.939-2.583-1.455%201.13%202.747-2.261%202.101zM98.456%2028.117l2.101-2.424%202.748%201.293-1.455-2.585%201.938-2.424-2.908.647-1.616-2.586-.325%203.07-3.068.646%202.908%201.293zM57.738%207.597l2.585-1.939%202.424%201.939-.97-3.07%202.584-1.777h-3.068l-.97-2.909-.969%202.909h-3.07l2.424%201.777zM37.379%2010.99l.646%203.07%201.293-2.909%203.07.324-2.424-2.101%201.293-2.747-2.586%201.455-2.423-1.939.646%202.908-2.585%201.616zM17.182%2026.986l2.746-1.293%202.101%202.424-.323-3.07%202.747-1.293-2.909-.646-.323-3.07-1.616%202.586-3.07-.647%202.101%202.424zM119.784%2049.932l-1.454-2.425H62.585c0-1.938%202.101-1.938%203.231-1.938h51.543l-1.453-2.424H67.109c-1.293%200-3.555.162-4.201.322.646-2.262%204.361-2.424%209.533-2.424h42.172l-1.454-2.423H73.411c-4.04%200-8.079.161-10.181%201.614%201.938-2.745%205.334-3.555%2013.572-3.555h35.225l-1.453-2.424H76.966C64.848%2034.257%2060%2037.328%2060%2047.021c0-9.693-4.847-12.766-16.966-12.766H9.426L7.972%2036.68h35.062c8.24%200%2011.634.81%2013.573%203.555-2.101-1.453-5.979-1.614-10.18-1.614H6.841l-1.454%202.423h42.171c5.333%200%208.887.162%209.533%202.424-.646-.16-2.908-.322-4.201-.322H4.094l-1.454%202.42h51.543c1.131%200%203.232%200%203.232%201.939H1.67L.216%2049.93h57.36v1.454h5.009V49.93h57.199v.002z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);background-repeat: no-repeat;width: 120px;height: 53px;margin-left: 40rem;padding-right: 6rem;"></a>
+                <a href="/" title="Home" class="uk-text-nowrap"
+                    style="color: black;margin-left: 33rem;max-width: unset;font-size: 25pt;font-weight: 400;text-decoration: none;">Library
+                    of America</a>
+            </div>
+            <div class="uk-child-width-expand@s uk-grid uk-padding uk-text-left" style="margin: 0px 10px;">
+                <div class="">
+                    <b class="uk-text-uppercase" style="color: red;font-size: 13pt;">Curator</b>
+                    <p class="" style="color: black;">
+                        A champion of America’s great writers and timeless works, Library of America guides readers in
+                        finding and exploring the exceptional writing that reflects the nation’s history and culture.
+                    </p>
+                    <span class=""><a href="/about" class=""
+                            style="color: black;text-decoration: underline;font-size: 11pt;letter-spacing: 1px;">Learn
+                            More</a></span>
+                </div>
+                <div class="">
+                    <b class="uk-text-uppercase" style="color: red;font-size: 13pt;">Publisher</b>
+                    <p class="" style="color: black;">
+                        From poetry, novels, and memoirs to journalism, crime writing, and science fiction, the more
+                        than 300 volumes published by Library of America are widely recognized as America’s literary
+                        canon.
+                    </p>
+                    <span class="uk-text-nowrap" style="margin-right: 90%;"><a href="/books" class=""
+                            style="color: black;text-decoration: underline;">Browse our books</a></span>
+                    <span class=""><a href="/subscribe" class=""
+                            style="color: black;text-decoration: underline;">Subscribe</a></span>
+                </div>
+                <div class="">
+                    <b class="uk-text-uppercase" style="color: red;font-size: 13pt;">Non-Profit</b>
+                    <p class="" style="color: black;">
+                        With contributions from donors, Library of America preserves and celebrates a vital part of our
+                        cultural heritage for generations to come.
+                    </p>
+                    <span class="" style="text-decoration: underline;"><a href="/" class=""
+                            style="color: black;">Support our mission</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+<div  uk-grid style="background:#eeeeee;">
+<div class="uk-width-1-2">
+<div class="uk-card  uk- card- body">
+
+   <p class="uk-text-medium uk-margin-left uk-h4">Sign up for our newsletter, free Story of the Week, and more</p>   
+   <input class=" uk-input uk-form-width-medium uk-margin-left" type="text" placeholder="Name@email.com">
+    
+    
+    
+
+
+
+
+</div>
+</div>
+
+<div class="uk-width-1-2" style="background:#eeeeee;">
+<div class="uk-card   uk- card- body"style="background:#eeeeee;">
+
+   <p class="uk-text-medium uk-margin-left uk-h4">Save 10% on your first order by requesting a free catalog</p>
+   <button class="uk-button uk-button-default uk-margin-left uk-button-large uk-button-danger">REQUEST CATALOG</button>
+
+
+</div>
+
+</div>
+<div class="uk-card uk-card-body uk-margin-top" style="padding-bottom: 0px;
+    display: inline-block;
+    width: 100%;
+    border-top: 2px solid #D4D4D4;padding-top: 31px;background:#eeeeee;">
+                       
+ </div>
+
+ 
+ <div class="uk-width-1-6">
+<div class="uk-card">
+
+   <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7">BOOKS</p>
+   <p class="uk-text-medium  uk-margin-left ">Browse the Catalog</p>
+   <p class="uk-text-medium  uk-margin-left ">LOA Series</p>
+   <p class="uk-text-medium  uk-margin-left ">American Poets Project</p>
+   <p class="uk-text-medium  uk-margin-left ">LOA eBook Classics</p>
+   <p class="uk-text-medium  uk-margin-left ">Boxed Sets</p>
+
+
+</div>
+</div>
+
+<div class="uk-width-1-6">
+<div class="uk-card  uk- card- body">
+
+   <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7">WRITERS</p>
+   <p class="uk-text-medium  uk-margin-left ">Browse the Roster</p>
+   <p class="uk-text-medium  uk-margin-left ">Writer of the Week</p>
+
+
+</div>
+</div>
+
+
+<div class="uk-width-1-6">
+<div class="uk-card  uk- card- body">
+
+   <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7">NEWS & VIEWS</p>
+   <p class="uk-text-medium  uk-margin-left ">News</p>
+   <p class="uk-text-medium  uk-margin-left ">Influences</p>
+   <p class="uk-text-medium  uk-margin-left ">Interviews</p>
+   <p class="uk-text-medium  uk-margin-left ">Video</p>
+   <p class="uk-text-medium  uk-margin-left ">Audio</p>
+   <p class="uk-text-medium  uk-margin-left ">Story of the Week</p>
+   <p class="uk-text-medium  uk-margin-left ">The Moviegoer</p>
+   <p class="uk-text-medium  uk-margin-left ">In the Community</p>
+
+
+</div>
+</div>
+<div class="uk-width-1-6">
+<div class="uk-card  uk- card- body">
+ <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7">ABOUT</p>
+   <p class="uk-text-medium  uk-margin-left ">Mission</p>
+   <p class="uk-text-medium  uk-margin-left ">LOA Editions</p>
+   <p class="uk-text-medium  uk-margin-left ">LOA in the Community</p>
+   <p class="uk-text-medium  uk-margin-left ">LOA in the Classroom</p>
+   <p class="uk-text-medium  uk-margin-left ">People</p>
+   <p class="uk-text-medium  uk-margin-left ">FAQs</p>
+
+
+
+</div>
+</div>
+<div class="uk-width-1-6">
+<div class="uk-card   uk- card- body">
+
+   <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7">SUBSCRIBE</p>
+   <p class="uk-text-medium  uk-margin-left ">Current Offers</p>
+   <p class="uk-text-medium  uk-margin-left ">FAQs</p>
+      <p class="uk-text-medium  uk-margin-left ">How it Works</p>
+
+
+</div>
+</div>
+<div class="uk-width-1-6">
+<div class="uk-card   uk- card- body">
+
+   <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7">SUPPORT</p>
+   <p class="uk-text-medium  uk-margin-left ">Annual Fund</p>
+   <p class="uk-text-medium  uk-margin-left ">Project Support</p>
+   <p class="uk-text-medium  uk-margin-left ">Guardians of American Letters</p>
+   <p class="uk-text-medium  uk-margin-left ">Fellows of LOA</p>
+   <p class="uk-text-medium  uk-margin-left ">PGift Sets</p>
+   <p class="uk-text-medium  uk-margin-left ">Bequests</p>
+   <p class="uk-text-medium  uk-margin-left ">Membership</p>
+
+
+</div>
+</div>
+ <footer id="page-footer" class="uk-margin-top"  style="background-color:black;">
+<div class="uk-child-width-1-5@m uk-grid-small " uk-grid>
+   
+   <div>
+        <div class="uk-card uk-card-secondary uk-card-body"style="background-color:black;">
+             <p class="uk-text-medium uk-text-bold  uk-margin-left uk-h7"  >FOLLOW US</p>
+        </div>
+    </div>
+	
+	
+    <div>
+        <div class="uk-card   uk-card-body"style="background-color:black">
+           <a href="" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+<a href="" class="uk-icon-link  uk-margin-small-right" uk-icon="facebook"></a>
+<a href="" class="uk-icon-link" uk-icon="youtube"></a>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card  uk-card-secondary uk-card-body" style="background-color:black">
+            
+            <p>Contact Us</p>
+			
+			<p>Customer Service</p>
+			<p>Media Inquiries</p>
+        </div>
+    </div>
+	
+
+	
+	
+	 <div>
+	
+        <div class="uk-card uk-card-secondary uk-card-body"style="background-color:black">
+             <p>RIGHTS & PERMISSIONS</p>
+			
+			<p>Privacy Policy</p>
+			
+        
+		</div>
+    </div>
+	
+	<div>
+        <div class="uk-card  uk-card-secondary uk-card-body" style="background-color:black">
+            
+            <p>© Literary Classics of the United States, Inc.</p>
+			<p>Site by AREA 17</p>
+			
+        </div>
+    </div>
+</div>
+
+</footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
